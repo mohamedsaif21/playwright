@@ -1,0 +1,22 @@
+{
+  "name": "devsphere-e2e-automation",
+  "version": "1.0.0",
+  "description": "End-to-End Playwright Automation for DevSphere — dev-sphere-phi.vercel.app",
+  "scripts": {
+    "test":             "npx playwright test",
+    "test:headed":      "npx playwright test --headed",
+    "test:smoke":       "npx playwright test --grep @smoke --headed",
+    "test:auth":        "npx playwright test --grep @auth --headed",
+    "test:compiler":    "npx playwright test --grep @compiler --headed",
+    "test:e2e":         "npx playwright test --grep @e2e --headed",
+    "test:homepage":    "npx playwright test tests/01-homepage.spec.js --headed",
+    "test:report":      "npx playwright show-report",
+    "test:debug":       "npx playwright test --debug"
+  },
+  "keywords": ["playwright", "devsphere", "automation", "e2e"],
+  "author": "QA Automation",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0"
+  }
+}
