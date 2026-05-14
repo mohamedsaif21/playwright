@@ -22,6 +22,9 @@ This repository contains comprehensive Playwright automation tests covering mult
 cd devsphere-automation
 npm install
 ```
+```run
+npx playwright test tests/03-compiler.spec.js --headed
+```
 
 ### Configuration
 
